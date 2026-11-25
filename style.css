@@ -1,0 +1,388 @@
+
+/* =========================
+   GENERAL STYLING
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2ede8;
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    color: #0f2012;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: #3b2923;
+    color: #ffffff;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 16px;
+    color: #e5cbb5;
+    margin: 0;
+}
+
+/* =========================
+   NAVIGATION BAR
+========================= */
+
+nav {
+    background-color: #ffffff;
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #e8ddd2;
+}
+
+nav a {
+    color: #49352b;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #b77945;
+}
+
+/* =========================
+   MAIN SECTIONS
+========================= */
+
+section {
+    width: 90%;
+    max-width: 1100px;
+    min-height: 200px;
+    margin: 35px auto;
+    padding: 45px 30px;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+section h2 {
+    color: #573b2e;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+section h3 {
+    color: #a56b3f;
+    font-size: 23px;
+}
+
+section p {
+    color: #75665e;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    background-color: #9b633d;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #70452d;
+    transform: translateY(-2px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #3b2923;
+    color: #e5cbb5;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+#menu {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background: #fff8f0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-card h3 {
+    margin-bottom: 8px;
+    color: #4b2e1e;
+}
+
+.menu-card p {
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-weight: bold;
+    color: #b5651d;
+    font-size: 1.2rem;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #9b633d;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #70452d;
+    transform: translateY(-2px);
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+header button {
+    margin-top: 15px;
+}
+
+body.dark {
+    background-color: #1e1512;
+    color: #f2ede8;
+}
+
+body.dark nav {
+    background-color: #2b1f1a;
+    border-bottom-color: #3b2923;
+}
+
+body.dark nav a {
+    color: #e5cbb5;
+}
+
+body.dark section {
+    background-color: #2b1f1a;
+}
+
+body.dark section p {
+    color: #d8c7b8;
+}
+
+body.dark .menu-card {
+    background: #3a2b24;
+}
+
+body.dark .menu-card p {
+    color: #d8c7b8;
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    color: #49352b;
+    font-size: 28px;
+    padding: 0 10px;
+}
+
+.menu-toggle:hover {
+    background: none;
+    transform: none;
+}
+
+body.dark .menu-toggle {
+    color: #e5cbb5;
+}
+
+@media (max-width: 700px) {
+    .menu-toggle {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* হিরো সেকশনে ছবি */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                      url("images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 110px 20px;
+}
+
+/* মেনু কার্ডের ছবি ও hover */
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 12px;
+}
+
+.menu-card {
+    transition: 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+/* স্টিকি নেভবার */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.shop-banner {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.review-card {
+    background: #fff8f0;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+}
+
+.stars {
+    color: #f5a623;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.reviewer {
+    font-weight: bold;
+    color: #9b633d;
+    font-size: 14px;
+}
+
+body.dark .review-card {
+    background: #3a2b24;
+}
+/* ===== Stepper on menu cards (− 1 +) ===== */
+.stepper {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+    background: #9b633d;
+    border-radius: 30px;
+    padding: 4px;
+}
+
+.step-btn {
+    background: #ffffff;
+    color: #9b633d;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.step-btn:hover {
+    background: #f2ede8;
+    transform: none;
+}
+
+.step-qty {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 30px;
+    text-align: center;
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Coffee Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>My Coffee Shop</h1>
+    <p>Fresh Coffee, Happy Moments!</p>
+    <button id="themeBtn">🌙 Dark Mode</button>
+</header>
+
+<nav>
+    <button id="menuBtn" class="menu-toggle">☰</button>
+
+    <div id="navLinks" class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section id="home">
+    <h2>Welcome to Our Cafe</h2>
+    <p>Enjoy delicious coffee and tasty snacks.</p>
+    <p id="greeting"></p>
+    <a href="#menu" class="btn">Explore Menu</a>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <img src="image/coffee shop.jpg" class="shop-banner" alt="Our coffee shop">
+    <p>We are a small neighbourhood cafe serving freshly roasted coffee
+       and homemade snacks since 2020.</p>
+</section>
+
+<section id="menu">
+    <h2>Our Menu</h2>
+    <p class="subtitle">Freshly brewed, every single day.</p>
+
+    <div class="menu-grid">
+        <div class="menu-card">
+            <img src="image/cappuccino.jpg" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p>A creamy coffee with rich flavour.</p>
+            <span class="price">₹150</span>
+             <button class="add-btn" data-name="Cappuccino" data-price="150">Add</button>
+        </div>
+        <div class="menu-card">
+            <img src="image/espresso.jpg" alt="Espresso">
+            <h3>Espresso</h3>
+            <p>Strong, bold and full of aroma.</p>
+            <span class="price">₹120</span>
+            <button class="add-btn" data-name="Espresso" data-price="120">Add</button>
+        </div>
+        <div class="menu-card">
+            <img src="image/coldcoffee.jpg" alt="Cold Coffee">
+            <h3>Cold Coffee</h3>
+            <p>Chilled, smooth and lightly sweet.</p>
+            <span class="price">₹180</span>
+             <button class="add-btn" data-name="Cold Coffee" data-price="180">Add</button>
+        </div>
+        <div class="menu-card">
+            <img src="image/Caramel Latte.jpg" alt="Caramel Latte">
+            <h3>Caramel Latte</h3>
+            <p>Soft milk coffee with sweet caramel.</p>
+            <span class="price">₹200</span>
+            <button class="add-btn" data-name="Caramel Latte" data-price="200">Add</button>
+        </div>
+
+        <div class="menu-card">
+    <img src="image/sandwich.jpg" alt="Sandwich">
+    <h3>Grilled Sandwich</h3>
+    <p>Toasted with fresh veggies and cheese.</p>
+    <span class="price">₹140</span>
+    <button class="add-btn" data-name="Sandwich" data-price="140">Add</button>
+</div>
+
+ <div class="menu-card">
+            <img src="image/Pizza.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>cheese loaded chicken burst pizza .</p>
+            <span class="price">₹300</span>
+            <button class="add-btn" data-name="Pizza" data-price="300">Add</button>
+        </div>
+
+         <div class="menu-card">
+            <img src="image/Burger.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>Bite into tender juicy goodness.</p>
+            <span class="price">₹200</span>
+            <button class="add-btn" data-name="Burger" data-price="200">Add</button>
+        </div>
+
+<div class="menu-card">
+    <img src="image/Brownie.jpg" alt="Brownie">
+    <h3>Chocolate Brownie</h3>
+    <p>Warm, fudgy and made fresh daily.</p>
+    <span class="price">₹120</span>
+    <button class="add-btn" data-name="Brownie" data-price="120">Add</button>
+</div>
+
+    </div>
+</section>
+
+<section id="reviews">
+    <h2>What Our Customers Say</h2>
+    <p class="subtitle">Sample reviews for demo purposes</p>
+
+    <div class="review-grid">
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"The cappuccino is creamy and perfect. My favourite spot to relax after work."</p>
+            <span class="reviewer">- Sanjay Roy
+            </span>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"Great coffee, friendly staff and a cozy place to sit and read."</p>
+            <span class="reviewer">- Eshita Sharma</span>
+        </div>
+
+        <div class="review-card">
+            <div class="stars">★★★★☆</div>
+            <p>"Loved the cold coffee and the brownie. Will definitely come again."</p>
+            <span class="reviewer">- Pankaj Nath</span>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="contact">
+    <h2>Visit Us</h2>
+    <p>123 Main Street, Your City</p>
+    <p>Open daily: 8:00 AM - 10:00 PM</p>
+
+    <div class="contact-buttons">
+        <a href="tel:+919674787576" class="btn">📞 Call Us</a>
+        <a href="https://wa.me/919674787576" class="btn" target="_blank">💬 WhatsApp</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 My Coffee Shop</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
